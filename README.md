@@ -1,6 +1,6 @@
 # Docker-
-$docker version
-$docker info
+#$docker version
+#$docker info
 $docker container run --publish 80:80 nginx
 $docker container run --publish 80:80 --detach nginx
 $docker container ls
