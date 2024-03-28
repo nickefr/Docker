@@ -1,4 +1,6 @@
 # Docker Commands
+# Docker Cheat Sheet 🐳
+## 🐳
 
 This README includes various Docker commands for managing containers, networks, images, and Docker Compose configurations.
 
@@ -26,7 +28,7 @@ $docker container run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=true mysql
 $docker container top mysql 
 $docker container top nginx
 $docker container inspect mysql
-Shell Commands
+#'Shell Commands'
 $docker container run -it --name proxy nginx bash 
 $docker container run -it --name  ubuntu ubuntu
 Network Commands
@@ -38,10 +40,10 @@ $docker network inspect
 $docker network disconnect 
 $docker network inspect bridge
 $docker network create my_app_net
-DNS PING COMMANDS
+#'DNS PING COMMANDS'
 $docker container run -d --name my_ngninx --network my_app_net nginx 
 $docker container exec -it my_nginx ping new_nginx
-'Image, Tags, Files, and Volume Commands'
+#'Image, Tags, Files, and Volume Commands'
 $docker image ls
 $docker pull nginx
 $docker history ngunx:latest
